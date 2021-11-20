@@ -234,6 +234,7 @@
     
     .menu .sideMenu ul li:hover .subMenu {
         display: block;
+        background-color: #ffffff;
     }
     
     .menu .sideMenu ul li .subMenu {
@@ -352,8 +353,8 @@
     .ebooks .left-box .top .title {
         text-indent: 24px;
         font-size: 24px;
-        font-weight: 300px;
-        color: #ff6700;
+        font-weight: 300;
+        color: #101010;
     }
     /* 右侧标题导航 */
     
@@ -537,7 +538,7 @@
         text-indent: 24px;
         font-size: 24px;
         font-weight: 300;
-        color: #ff6700;
+        color: #101010;
     }
     /* 右侧导航 */
     
@@ -671,7 +672,7 @@
         text-indent: 24px;
         font-size: 24px;
         font-weight: 300;
-        color: #ff6700;
+        color: #101010;
     }
     /* 右侧导航 */
     
@@ -805,7 +806,7 @@
         text-indent: 24px;
         font-size: 24px;
         font-weight: 300;
-        color: #ff6700;
+        color: #101010;
     }
     /* 右侧导航 */
     
@@ -1003,41 +1004,64 @@
         margin-top: 30px;
     }
     
-    .promotion .top-promotion {
-        width: 1200px;
+    .promotion .ding-promotion {
+        font-size: 24px;
+        text-indent: 20px;
         height: 40px;
         line-height: 40px;
-        margin-top: 10px;
-        text-indent: 24px;
-        float: left;
-        font-weight: 300px;
-        border-bottom: 6px solid #ff6700;
-        font-size: 24px;
         color: #ff6700;
+        font-weight: 500;
+        background: #fff;
+        border-bottom: 6px solid #ff6700;
     }
-    /* .promotion .bottom-promotion {
+    
+    .promotion .ding-promotion ul li {
+        width: 15px;
         float: left;
-        width: 1200px;
-        height: 562px;
-        background-color: red;
-    } */
+        height: 15px;
+        border-radius: 50%;
+        background: #ccc;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    
+    .promotion .ding-promotion ul li.active {
+        background-color: #ff6700;
+    }
     
     .promotion .bottom-promotion {
-        width: 1190px;
+        width: 1170px;
         height: 498px;
         margin: 0 auto;
+    }
+    /* 外部盒子 */
+    
+    .promotion .bottom-promotion .out-box {
+        width: 1190;
+        height: 498px;
+        margin: 20px auto;
+        /* 超出隐藏 */
+        overflow: hidden;
+    }
+    /* 里面盒子 */
+    
+    .promotion .bottom-promotion .out-box .inner-box {
+        width: 2380px;
+        height: 498px;
+        /* 定位 */
+        position: relative;
+        left: 0;
     }
     /* 列表容器 */
     
-    .promotion .bottom-promotion ul {
+    .promotion .bottom-promotion .promotion-list {
         width: 1190px;
         height: 498px;
-        margin: 0 auto;
         /* background-color: #ff6700; */
     }
     /* 推荐列表li */
     
-    .promotion .bottom-promotion ul li {
+    .promotion .bottom-promotion .promotion-list li {
         width: 196px;
         height: 247px;
         background-color: #ffffff;
@@ -1095,6 +1119,7 @@
         height: 130px;
         width: 100%;
         background-color: rgba(204, 204, 204, 0.753);
+        margin-top: 30px;
     }
     /* 那条长水平线 */
     
@@ -1207,4 +1232,23 @@
     .bottom-footer .zhushi ul li {
         font-size: 10px;
         font-family: "楷体";
+    }
+    /*============ 返回顶部============== */
+    
+    .backToTop {
+        width: 30px;
+        height: 50px;
+        background-color: red;
+        /* 定位 */
+        position: fixed;
+        bottom: 100px;
+        left: 610px;
+        margin-left: 50%;
+        /* 默认隐藏 */
+        display: none;
+    }
+    
+    .backToTop img {
+        width: 100%;
+        height: 100%;
     }
