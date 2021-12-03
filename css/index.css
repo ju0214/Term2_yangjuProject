@@ -141,6 +141,10 @@
     background-color: #ff6700;
     color: #ffffff;
     padding-left: 3px;
+    background-image: url(../img/购物车1.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 20px 20px;
 }
 
 
@@ -148,7 +152,6 @@
 
 .nav .search-shopcart-order .shopcart-order button:nth-child(1) span:first-child {
     /* background-size: 20px 20px; */
-    background-image: url(../img/购物.png);
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: top;
