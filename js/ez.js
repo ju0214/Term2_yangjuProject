@@ -53,13 +53,14 @@ $(function() {
     $('.change').click(function() {
         //自增
         index++;
+
         //边界判断
 
         //让里面的inner-box 运动
         $('.inner-box').stop('true').animate({
             left: -index * 1200
         }, function() {
-            if (index === 3) {
+            if (index > 2) {
                 index = 0;
                 $('.inner-box').css('left', 0);
             }
